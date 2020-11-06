@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: #13203f;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 65px;
+    background-color: #152248;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    z-index: 999;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li{
+    list-style: none;
+    margin: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+.dashboard{
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 45px;
+    background: orange;
+    padding: 7px 19px;
+    border-radius: 25px;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.dashboard:hover{
+    background-color: rgb(255, 217, 136);
+    color: black;
+    transform: scale(1.1);
+}
+
+.logo{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    left: 25px;
+}
+
+.top-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.top-container h2{
+    font-size: 34px;
+}
+
+.top-container h3{
+    padding: 20px 150px
+}
+.top-container h4{
+    background: orange;
+    color: white;
+    border-radius: 15px;
+}
+
+.soldout{
+    color: rgb(255, 255, 255);
+    background-color: orange;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    padding: 15px 15px;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+    cursor: progress;
+    transition: .5s ease-in;
+}
+.soldout:hover{
+    background-color: rgb(255, 217, 136);
+    color: black;
+    transform: scale(1.05);
+}
+.soldout:focus{
+    outline: none;
+}
+
+.top-image{
+    border-radius: 2px;
+    margin: 40px auto;
+    display: flex;
+    width: 75%;
+    transition: .5s ease;
+    box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.632);
+}
+.top-image:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.274);
+
+}
+
+.body-split{
+    z-index: -1;
+    margin-top: -150px;
+    position: fixed;
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(31, 44, 94);
+    transform: skewX(25deg);
+    transform: skewY(25deg);
+}
+
+.body-split2{
+    z-index: -1;
+    margin-top: -100px;
+    position: fixed;
+    height: 1000px;
+    width: 100%;
+    background-color: rgba(31, 44, 94, 0.445);
+    transform: skewX(-25deg);
+    transform: skewY(-25deg);
+}
+
+.white-split{
+    margin: 0 auto;
+    display: flex;
+    height: 3px;
+    width: 20%;
+    border-radius: 20px;
+    background: white;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sites-container h1{
+    letter-spacing: 1px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.sites-container h2{
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 30px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.card-logo{
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.379);
+    margin: 10px;
+    background: #13203f;
+    height: 250px;
+    width: 250px;
+    transition: 0.2s ease;
+}
+
+.card-logo:hover{
+    transform: scale(1.05);
+}
+
+.card-logo:nth-child(1){
+    background-image: url(./img/jd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.card-logo:nth-child(2){
+    background-image: url(./img/supreme.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.card-logo:nth-child(3){
+    background-image: url(./img/shopify.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.card-logo:nth-child(4){
+    background-image: url(./img/fl.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.card-logo:nth-child(5){
+    background-image: url(./img/palace.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.card-logo:nth-child(5){
+    background-image: url(./img/palace.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.card-logo:nth-child(6){
+    background-image: url(./img/offspring-logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.features-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.features-container h1{
+    letter-spacing: 1px;
+    padding: 20px;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+}
+
+.features-container h2{
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.f-card h4{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.f-card h6{
+    font-weight: 100;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: -15px;
+}
+
+.f-card i{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.features-cards{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.f-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    height: 180px;
+    width: 300px;
+    background: rgba(31, 44, 94, 0.493);
+    border: white 1px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.379);
+    border-radius: 10px;
+}
+
+i{
+    padding: 0px 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    color: white;
+    background: rgb(31, 44, 94);
+}
+
+
+@media only screen and (max-width: 670px) {
+
+    .navbar ul{
+        display: none;
+    }
+ 
+    .dashboard{
+        position: absolute;
+        right: 0;
+        transform: scale(.7);
+    }
+    .top-container h2{
+        font-size: 22px;
+        padding: px;
+    }
+
+    .top-container h3{
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .page-break{
+        background:;
+        height: 700px;
+        width: 100%;
+    }
+    .footer{
+        display: none;
+    }
+    
+}
